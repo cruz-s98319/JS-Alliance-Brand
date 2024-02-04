@@ -14,7 +14,13 @@ function addCustomerName() {
 
 function toggleColors() {
     // <!-- todo: Change all classes named 'tm-white-rect' to 'tm-blue-rect' -->
+    let whiteRectElements = document.querySelectorAll('.tm-white-rect')
+    console.log(whiteRectElements);
 
+    whiteRectElements.forEach(function(element) {
+        element.classList.remove('tm-white-rect')
+        element.classList.add('tm-blue-react')
+    })
 };
 
 function hideElement() {
@@ -25,6 +31,8 @@ function hideElement() {
  function addText() {
 
     //<p id="intropara1" class="tm-color-gray">  <!--todo: Add customer company introduction text about their founding year-->
+    let introPara1 = document.getElementById('intropara1')
+    introPara1.innerText = "Alliance was founded in 1931 by Albert Daniels"
 
     //<p id="intropara2" class="mb-0 tm-color-gray"> <!--todo: Add customer company introduction text about what they lead in-->
 
