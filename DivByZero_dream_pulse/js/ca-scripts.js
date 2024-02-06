@@ -28,7 +28,8 @@ function toggleColors() {
 
 function hideElement() {
     //<ul class="nav flex-row tm-social-links">  <!--todo: Hide social links-->
-    // element.style.display = none
+    // let navBar = document.querySelectorAll('.tm-social-links')
+    // navBar.element.style.display = none
 
 };
 
